@@ -1,0 +1,179 @@
+main .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 265.5rem;
+  left: 0;
+  right: 0;
+}
+
+main .cards .card {
+  width: 196rem;
+  height: 252rem;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .cards .card.center {
+  width: 251.5rem;
+  height: 323rem;
+  margin: 0 40.5rem;
+}
+
+main .cards .card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+main .cards .card div.bg-1 {
+  background: transparent linear-gradient(142deg, #00222F 0%, #025F84 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 2.5rem 3rem 19.5rem #037CAD;
+  mix-blend-mode: multiply;
+  border: 1.5rem solid #016A95;
+  border-radius: 16rem;
+  opacity: 0.9;
+}
+
+main .cards .card div.bg-2 {
+  box-shadow: 0 1.5rem 3rem #F453E4;
+  border: 9.5rem solid #E32AD2;
+  top: -9.5rem;
+  left: -9.5rem;
+  border-radius: 15rem;
+  opacity: 0.75;
+  filter: blur(10rem);
+}
+
+main .cards .card div.bg-3 {
+  box-shadow: 0 0 5rem #F453E4;
+  border: 2.5rem solid #E32AD2;
+  border-radius: 15rem;
+  opacity: 0.77;
+  filter: blur(2rem);
+}
+
+main .cards .card div.bg-4 {
+  box-shadow: 0 0 5rem #F453E4;
+  border: 1.5rem solid #E32AD2;
+  border-radius: 15rem;
+  opacity: 1;
+  filter: blur(1rem);
+}
+
+main .cards .card div.bg-5 {
+  border: 1rem solid var(--color-white);
+  border-radius: 15rem;
+  opacity: 1;
+  filter: blur(0.5rem);
+}
+
+main .cards .card img {
+  mix-blend-mode: lighten;
+}
+
+main .cards .card img.icon-1 {
+  width: 105rem;
+}
+
+main .cards .card img.icon-2 {
+  width: 165rem;
+}
+
+main .cards .card img.icon-3 {
+  width: 105rem;
+}
+
+main .btn-start {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 659.5rem;
+  width: 194rem;
+  height: 54rem;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* opacity: 0.7; */
+}
+
+main .btn-start div {
+  position: absolute;
+  left: 0;
+  height: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  transition: all .3s ease-in-out;
+}
+
+main .btn-start .bg-1 {
+  background: transparent linear-gradient(106deg, #00222F 0%, #025F84 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 5px 6px 39px #037CAD;
+  mix-blend-mode: multiply;
+  border: 3px solid #016A95;
+  border-radius: 64px;
+}
+
+main .btn-start .bg-2 {
+  box-shadow: 0px 3px 6px #1F9ACC;
+  border: 12px solid #0087BE;
+  border-radius: 64px;
+  filter: blur(16px);
+}
+
+main .btn-start .bg-3 {
+  box-shadow: 0px 0px 10px #1F9ACC;
+  border: 4px solid #0087BE;
+  border-radius: 64px;
+  filter: blur(16px);
+}
+
+main .btn-start .bg-4 {
+  box-shadow: 0px 0px 10px #1F9ACC;
+  border: 2px solid #0087BE;
+  border-radius: 64px;
+  filter: blur(2px);
+}
+
+main .btn-start .bg-5 {
+  border: 2px solid #93E0FF;
+  border-radius: 64px;
+  filter: blur(2px);
+}
+
+main .btn-start p {
+  font-family: var(--Code-Pro-LC);
+  color: #B1E8FF;
+  font-size: 20rem;
+  transition: all .3s ease-in-out;
+  opacity: 0.7;
+}
+
+main .btn-start:hover {
+  opacity: 1;
+}
+
+main .btn-start:hover p {
+  color: var(--color-white);
+  opacity: 1;
+  mix-blend-mode: lighten;
+}
+
+main .btn-start:hover div {
+  opacity: 1;
+}

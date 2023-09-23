@@ -1,0 +1,83 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+
+html {
+	font-size: 0.1302083vmin;
+	background-color: var(--color-white);
+}
+
+body {
+	width: 1024rem;
+	height: 768rem;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background: transparent linear-gradient(180deg, #021F14 0%, #003B53 23%, #002D40 88%, #00151C 100%) 0% 0% no-repeat padding-box;
+}
+
+header {
+	background-image: url('../images/bg-header.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 135rem;
+	box-shadow:
+		0.2rem 3.7rem 2.2rem rgba(0, 0, 0, 0.065),
+		0.6rem 8.8rem 5.3rem rgba(0, 0, 0, 0.093),
+		1.1rem 16.7rem 10rem rgba(0, 0, 0, 0.115),
+		2rem 29.7rem 17.9rem rgba(0, 0, 0, 0.137),
+		3.8rem 55.6rem 33.4rem rgba(0, 0, 0, 0.165),
+		9rem 133rem 80rem rgba(0, 0, 0, 0.23)
+	;
+}
+
+header .logo-fcb {
+	width: 149rem;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 69rem;
+}
+
+header .product-logo {
+	background-color: var(--color-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 12rem;
+	padding: 0.6em 1.2em;
+	font-family: var(--font-gotham);
+	font-size: 20rem;
+	color: var(--color-font-logo);
+	margin: 0;
+	width: min-content;
+	height: min-content;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	white-space: nowrap;
+	margin: auto;
+}
+
+main .title-content {
+	font-family: var(--font-code);
+	color: var(--color-font-yellow);
+	font-size: 33rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+	position: absolute;
+	top: 191.5rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
