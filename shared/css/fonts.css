@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Code-Pro-LC-Light';
+  src: url('../fonts/Code-Pro-Light-LC.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Code-Pro-LC';
   src: url('../fonts/Code-Pro-LC.otf') format('opentype');
   font-style: normal;
@@ -15,6 +22,20 @@
 @font-face {
   font-family: 'Gotham-Medium';
   src: url('../fonts/Gotham-Medium.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../fonts/Gotham-Light.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../fonts/Gotham-Bold.otf') format('opentype');
   font-style: normal;
   font-display: swap;
 }

@@ -1,0 +1,225 @@
+main .block {
+  position: absolute;
+  top: 172rem;
+  left: 119.25rem;
+}
+
+main .block .title-content {
+  position: initial;
+  font-size: 27.5rem;
+  margin-bottom: 36rem;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 27.5rem 40rem ;
+}
+
+main .cards .card {
+  width: 170.5rem;
+  height: 219rem;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+main .cards .card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+}
+
+main .cards .card div.bg-2 {
+  left: -9.5rem;
+  top: -9.5rem;
+}
+
+main .cards .card img {
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+  filter: brightness(1.4) grayscale(0.5);
+  transition: all .3s ease-in-out;
+}
+
+main .cards .card img.purple {
+  filter: hue-rotate(17deg) saturate(1.9) brightness(1.4) grayscale(0.5);
+}
+
+main .cards .card img.icon-1 {
+  width: 82rem;
+  margin-bottom: 11rem;
+}
+
+main .cards .card img.icon-2 {
+  width: 106rem;
+  margin-bottom: 17rem;
+}
+
+main .cards .card img.icon-3 {
+  width: 105rem;
+  margin-bottom: 20rem;
+}
+
+main .cards .card img.icon-4 {
+  width: 112rem;
+  margin-bottom: 24rem;
+}
+
+main .cards .card img.icon-5 {
+  width: 95rem;
+  margin-bottom: 16rem;
+}
+
+main .cards .card img.icon-6 {
+  width: 84rem;
+  margin-bottom: 19rem;
+}
+
+main .cards .card p {
+  font-family: var(--font-code-light);
+  font-weight: lighter;
+  font-size: 16rem;
+  color: #FFC1EC;
+  text-align: center;
+  opacity: 0.5;
+  width: 8.4em;
+  line-height: normal;
+  margin-bottom: 32.5rem;
+  transition: all .3s ease-in-out;
+  letter-spacing: 0.04em;
+}
+
+main .cards .card:hover div {
+  opacity: 1;
+}
+
+main .cards .card:hover p {
+  mix-blend-mode: lighten;
+  color: var(--color-white);
+  opacity: 1;
+}
+
+main .cards .card:hover img {
+  opacity: 1;
+  filter: brightness(1) grayscale(0);
+}
+
+main .cards .card:hover img.purple {
+  opacity: 1;
+  filter: hue-rotate(17deg) saturate(1.9) brightness(1) grayscale(0);
+}
+
+main .lateral-menu {
+  position: absolute;
+  right: 0;
+  top: 235.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 17.5rem;
+  width: 193rem;
+}
+
+main .lateral-menu .contents {
+  border-radius: 16rem 0 0 16rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 269rem;
+}
+
+main .lateral-menu .contents:after {
+  content: '';
+  background: transparent linear-gradient(138deg, #014D6C 0%, #0399D6 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 100%;
+  height: 269rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16rem 0 0 16rem;
+}
+
+main .lateral-menu .contents .qr-code {
+  width: 131rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 23.5rem;
+  margin-bottom: 13.5rem;
+}
+
+main .lateral-menu .contents p {
+  margin-bottom: 15.2rem;
+  font-family: var(--font-code-light);
+  font-weight: lighter;
+  color: var(--color-white);
+  text-align: center;
+  line-height: normal;
+  font-size: 18rem;
+  position: relative;
+  z-index: 1;
+  width: 153rem;
+  letter-spacing: 0.05em;
+}
+
+main .lateral-menu .btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 83rem;
+  border-radius: 16rem 0 0 16rem;
+  cursor: pointer;
+}
+
+main .lateral-menu .btn-menu:after {
+  content: '';
+  background: transparent linear-gradient(113deg, #014D6C 0%, #0399D6 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 16rem 0 0 16rem;
+  opacity: 0.75;
+  backdrop-filter: blur(4rem);
+  -webkit-backdrop-filter: blur(4rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 83rem;
+  transition: all .3s ease-in-out;
+}
+
+main .lateral-menu .btn-menu p {
+  font-family: var(--font-code-light);
+  font-size: 18rem;
+  color: var(--color-white);
+  line-height: normal;
+  font-weight: lighter;
+  border-radius: 16rem 0 0 16rem;
+  position: relative;
+  z-index: 1;
+  width: 93rem;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+main .lateral-menu .btn-menu:hover p {
+  color: var(--color-font-yellow);
+}
+
+main .lateral-menu .btn-menu:hover:after {
+  opacity: 0.95;
+}

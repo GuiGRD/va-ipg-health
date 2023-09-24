@@ -1,0 +1,68 @@
+main .box-title {
+  border-radius: 16rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 170rem;
+  width: 587rem;
+  height: 96.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .box-title:after {
+  content: '';
+  background: transparent linear-gradient(180deg, #021F14 0%, #003B53 23%, #002D40 88%, #00151C 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  border-radius: 16rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.65;
+}
+
+main .box-title p {
+  font-size: 20rem;
+  font-family: var( --font-code-light);
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1.3em;
+  position: relative;
+  z-index: 1;
+}
+
+main .box-title span {
+  color: var( --color-font-blue);
+}
+
+main .graph {
+  width: 678rem;
+  position: absolute;
+  left: 126.5rem;
+  top: 300rem;
+}
+
+main .more {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 355rem;
+  left: 369rem;
+  filter: drop-shadow(1rem 3rem 16rem #7DD8FDB3);
+}
+
+main .more img {
+  width: 38.5rem;
+  height: 38.5rem;
+  filter: brightness(1.15);
+  transition: all .3s ease-in-out;
+}
+
+main .more:hover img {
+  filter: brightness(1);
+}
+
