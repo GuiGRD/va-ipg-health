@@ -2,10 +2,11 @@
 
   --font-code: 'Code-Pro-LC', arial, helvetica, sans-serif;
   --font-code-bold: 'Code-Pro-Bold-LC', arial, helvetica, sans-serif;
-  --font-code-light: 'Code-Pro-Light-LC', arial, helvetica, sans-serif;
+  --font-code-light: 'Code-Pro-LC', arial, helvetica, sans-serif;
   --font-gotham: 'Gotham-Medium', arial, helvetica, sans-serif;
   --font-gotham-bold: 'Gotham-Bold', arial, helvetica, sans-serif;
   --font-gotham-light: 'Gotham-Light', arial, helvetica, sans-serif;
+  --font-open-sans: 'OpenSans-ExtraBold', arial, helvetica, sans-serif;
 
   --color-white: #FFF;
   --color-font-yellow: #FCB125;

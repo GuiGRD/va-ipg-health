@@ -1,0 +1,281 @@
+header .slide-title {
+  width: 401rem;
+  height: 89rem;
+}
+
+header .slide-title .title-img {
+  width: 36rem;
+  margin-bottom: 3rem;
+  margin-right: 13rem;
+}
+
+main .container {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 175rem;
+  width: 496.5rem;
+  height: 460rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .container .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .steps .step {
+  display: flex;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  width: 35.5rem;
+  height: 35.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .steps .line {
+  width: 37.5rem;
+  height: 2.5rem;
+  background-color: #FDFFEA;
+}
+
+main .container .steps .step p {
+  font-family: var(--font-open-sans);
+  color: var(--color-white);
+  font-size: 25rem;
+  height: 1.05em;
+}
+
+main .container .steps .step svg {
+  width: 20rem;
+  height: min-content;
+}
+
+main .container .steps div {
+  transition: all .3s ease-in-out;
+  opacity: 0.4;
+}
+
+
+main .container .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .buttons button {
+  width: 194rem;
+}
+
+main .container .buttons .btn-neon-blue {
+  margin-right: 20rem;
+}
+
+main .container .buttons .btn-neon-pink:hover p {
+  color: var(--color-white);
+}
+
+main .container .cart {
+  width: 100%;
+  height: 310rem;
+  display: none;
+}
+
+main .container .cart h3 {
+  font-family: var(--font-code-light);
+  color: var(--color-font-yellow);
+  font-size: 20rem;
+  text-align: center;
+  margin-bottom: 37rem;
+}
+
+main .container .cart .ref-item {
+	position: relative;
+	margin-bottom: 21rem;
+}
+
+main .container .cart .ref-item label {
+	display: flex;
+}
+
+main .container .cart .ref-item.item-cart {
+	margin-bottom: 10rem;
+}
+
+main .container .cart .ref-item.item-cart label {
+	align-items: center;
+}
+
+main .container .cart .ref-item.item-cart label p {
+	font-size: 14rem;
+}
+
+main .container .cart .ref-item label .circle {
+	width: 21rem;
+	height: 21rem;
+	border-radius: 50%;
+	background-color: transparent;
+	margin-right: 10.5rem;
+	border: solid 1rem #FDFFEA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  transition: all .3s ease-in-out;
+  box-sizing: border-box;
+}
+
+main .container .cart .ref-item label .circle svg {
+  width: 9rem;
+  height: min-content;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+main .container .cart .ref-item label p {
+	font-family: var(--font-code-light);
+	font-size: 16rem;
+	color: var(--color-white);
+	line-height: normal;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+  width: 390rem;
+}
+
+main .container .cart .ref-item .check {
+	display: none;
+}
+
+main .container .cart .ref-item .check:checked + label .circle {
+	background-color: var(--color-green);
+}
+
+main .container .cart .ref-item .check:checked + label .circle svg {
+	opacity: 1;
+}
+
+main .container .cart .ref-item .check:checked + label p {
+	color: var(--color-green);
+}
+
+main .container .cart .cart-items {
+  padding-top: 20rem;
+  height: 188rem;
+  overflow-y: scroll;
+}
+
+main .container .cart .cart-items::-webkit-scrollbar {
+  width: 13rem;
+  border-radius: 13rem;
+}
+
+main .container .cart .cart-items::-webkit-scrollbar-track {
+  width: 13rem;
+  border-radius: 13rem;
+  background-color: #CECECE;
+}
+
+main .container .cart .cart-items::-webkit-scrollbar-thumb {
+  width: 7.5rem;
+  border-radius: 13rem;
+  background-color: #9B9B9B;
+  border: solid 3rem #CECECE;
+}
+
+
+main.stp-1 .container .steps .step-1 {
+  opacity: 1;
+}
+
+main.stp-2 .container .steps .step-1,
+main.stp-2 .container .steps .line-1,
+main.stp-2 .container .steps .step-2 {
+  opacity: 1;
+}
+
+main.stp-3 .container .steps .step-1,
+main.stp-3 .container .steps .line-1,
+main.stp-3 .container .steps .step-2,
+main.stp-3 .container .steps .line-2,
+main.stp-3 .container .steps .step-3 {
+  opacity: 1;
+}
+
+.cart.step-2 {
+  width: 301rem !important;
+  height: 170rem !important;
+}
+
+.cart.step-2 .ref-item .circle {
+  background-color: transparent !important;
+  width: min-content !important;
+  height: min-content !important;
+  padding: 3rem;
+}
+
+.cart.step-2 .ref-item .circle:after {
+	content: '';
+	width: 12rem;
+	height: 12rem;
+	background-color: var(--color-green);
+	transition: all .3s ease-in-out;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.cart.step-2 .ref-item .check:checked + label .circle:after {
+	opacity: 1;
+}
+
+.cart.step-2 h3 {
+	margin-bottom: 44rem;
+}
+
+.cart.step-2 .txt-email {
+  margin-bottom: 33rem;
+  font-size: 18rem;
+  color: #E5FFC7;
+  font-family: var(--font-code-light);
+}
+
+.cart.step-3 {
+  height: 125rem !important;
+}
+
+.cart.step-3 h3 {
+  margin-bottom: 43rem;
+}
+
+.cart.step-3 .confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart.step-3 .confirm .icon-confirm {
+  width: 64.5rem;
+  height: 64.5rem;
+  margin-right: 30rem;
+  filter: drop-shadow(1.5rem 3rem 16rem #84FD72);
+  border-radius: 50%;
+}
+
+.cart.step-3 .confirm .txt-confirm {
+  font-family: var(--font-code);
+  font-size: 18rem;
+  color: var(--color-white);
+  line-height: normal;
+  width: 261rem;
+  line-height: 1.3em;
+}
+
+.cart.step-3 .confirm .txt-confirm span {
+  color: #E5FFC7;
+}

@@ -217,7 +217,22 @@ main .card-neon div.bg-5 {
 }
 
 /* CTA NEON */
-main .btn-neon-blue .bg-1 {
+.btn-neon-blue {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 32rem;
+	position: relative;
+	width: 271rem;
+	height: 55rem;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	transition: all .3s ease-in-out;
+}
+
+.btn-neon-blue .bg-1 {
   background: transparent linear-gradient(106deg, #00222F 0%, #025F84 100%) 0% 0% no-repeat padding-box;
   box-shadow: 2.5rem 3rem 20rem #037CAD;
   mix-blend-mode: multiply;
@@ -225,31 +240,87 @@ main .btn-neon-blue .bg-1 {
   border-radius: 32rem;
 }
 
-main .btn-neon-blue .bg-2 {
+.btn-neon-blue .bg-2 {
   box-shadow: 0 1.5rem 3rem #1F9ACC;
   border: 6rem solid #0087BE;
   border-radius: 32rem;
   filter: blur(8rem);
 }
 
-main .btn-neon-blue .bg-3 {
+.btn-neon-blue .bg-3 {
   box-shadow: 0 0 5rem #1F9ACC;
   border: 2rem solid #0087BE;
   border-radius: 32rem;
   filter: blur(8rem);
 }
 
-main .btn-neon-blue .bg-4 {
+.btn-neon-blue .bg-4 {
   box-shadow: 0 0 5rem #1F9ACC;
   border: 1rem solid #0087BE;
   border-radius: 32rem;
   filter: blur(1rem);
 }
 
-main .btn-neon-blue .bg-5 {
+.btn-neon-blue .bg-5 {
   border: 1rem solid #93E0FF;
   border-radius: 32rem;
   filter: blur(1rem);
+}
+
+
+.btn-neon-blue div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	transition: all .3s ease-in-out;
+}
+
+.btn-neon-blue p {
+	font-family: var(--font-code-light);
+	font-size: 20rem;
+	color: #B1E8FF;
+	text-align: center;
+	position: relative;
+	opacity: 0.5;
+	transition: all .3s ease-in-out;
+}
+
+.btn-neon-blue .arrow {
+	position: absolute;
+	width: 10rem;
+	height: min-content;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 20rem;
+	opacity: 0.5;
+	transition: all .3s ease-in-out;
+}
+
+.btn-neon-blue:hover div,
+.btn-neon-blue:hover p,
+.btn-neon-blue:hover .arrow-before {
+	opacity: 1;
+}
+
+.btn-neon-blue:hover p {
+	color: var(--color-white);
+}
+
+.btn-neon-blue .arrow-before {
+	position: absolute;
+	width: 10rem;
+	height: min-content;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 20rem;
+	opacity: 0.5;
+	transform: rotate(180deg);
+	transition: all .3s ease-in-out;
 }
 
 .btn-neon-pink {
@@ -284,7 +355,7 @@ main .btn-neon-blue .bg-5 {
 	top: -9.5rem;
 	left: -9.5rem;
 	border-radius: 32rem;
-	opacity: 0.75;
+	opacity: 0.7;
 	filter: blur(10rem);
 }
 
@@ -294,7 +365,7 @@ main .btn-neon-blue .bg-5 {
 	top: -2.4rem;
 	left: -2.4rem;
 	border-radius: 32rem;
-	opacity: 0.77;
+	opacity: 0.7;
 	filter: blur(2rem);
 }
 
@@ -304,7 +375,7 @@ main .btn-neon-blue .bg-5 {
 	top: -1.5rem;
 	left: -1.5rem;
 	border-radius: 32rem;
-	opacity: 1;
+	opacity: 0.7;
 	filter: blur(1rem);
 }
 
@@ -314,7 +385,7 @@ main .btn-neon-blue .bg-5 {
 	top: -1rem;
 	left: -1rem;
 	border-radius: 32rem;
-	opacity: 1;
+	opacity: 0.7;
 	filter: blur(0.5rem);
 }
 
