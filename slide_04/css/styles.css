@@ -1,0 +1,89 @@
+header .slide-title {
+  width: 424.5rem;
+}
+
+header .slide-title .title-img {
+  width: 64rem;
+  margin-right: 20rem;
+}
+
+main .img-bg {
+  width: 532rem;
+  position: absolute;
+  top: 190rem;
+  right: 20rem;
+}
+
+main .box-txt {
+  position: absolute;
+  top: 199rem;
+  left: 108.5rem;
+  width: 474rem;
+}
+
+main .box-txt p {
+  font-family: var(--font-code);
+  font-size: 18rem;
+  color: var(--color-white);
+  line-height: 1.2em;
+}
+
+main .box-txt p.txt-yellow {
+  margin-bottom: 12rem;
+  font-size: 20rem;
+  color: var(--color-font-yellow);
+}
+
+main .lines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 807rem;
+  position: absolute;
+  top: 423rem;
+  left: 108.5rem;
+}
+
+main .lines .line {
+  width: 241rem;
+  height: 1rem;
+  background-color: #FFFFFF67;
+}
+
+main .lines p {
+  font-family: var(--font-code);
+  color: var(--color-white);
+  font-size: 20rem;
+}
+
+main .lines p span {
+  color: var(--color-font-blue);
+}
+
+main .box-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 807rem;
+  position: absolute;
+  top: 471rem;
+  left: 108.5rem;
+}
+
+main .box-texts .box {
+  width: 390rem;
+  box-sizing: border-box;
+  padding: 42rem 50rem;
+  border-radius: 16rem;
+  background: transparent linear-gradient(90deg, #040e1d 0%, #001723bf 23%, #001723bf 88%, #00151C 100%) 0% 0% no-repeat padding-box;
+  height: 155rem;
+  display: flex;
+  align-items: center;
+}
+
+main .box-texts .box p {
+  font-family: var(--font-code);
+  color: var(--color-white);
+  font-size: 19rem;
+  line-height: 1.2em;
+}
